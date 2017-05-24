@@ -22,7 +22,7 @@ class webmap3_view_kml
 function webmap3_view_kml( $dirname )
 {
 	$this->_DIRNAME = $dirname;
-	$this->_xoops_param =& webmap3_xoops_param::getInstance();
+	$this->_xoops_param = webmap3_xoops_param::getInstance();
 	$this->_kml_class   =& webmap3_api_kml::getSingleton( $dirname );
 }
 

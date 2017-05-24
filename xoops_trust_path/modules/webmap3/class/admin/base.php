@@ -35,10 +35,10 @@ function webmap3_admin_base( $dirname, $trust_dirname )
 {
 	$this->webmap3_lib_admin_base( $dirname, $trust_dirname );
 
-	$this->_dir_class      =& webmap3_lib_dir::getInstance();
-	$this->_xoops_param    =& webmap3_xoops_param::getInstance();
+	$this->_dir_class      = webmap3_lib_dir::getInstance();
+	$this->_xoops_param    = webmap3_xoops_param::getInstance();
 	$this->_language_class =& webmap3_d3_language::getSingleton( $dirname );
-	$this->_menu_class     =& webmap3_admin_menu::getInstance( $dirname, $trust_dirname );
+	$this->_menu_class     = webmap3_admin_menu::getInstance( $dirname, $trust_dirname );
 
 	$this->_UPLOADS_PATH = $this->_xoops_param->get_module_config_by_name('gicon_path') ;
 	$this->_UPLOADS_DIR  = XOOPS_ROOT_PATH .'/'. $this->_UPLOADS_PATH ;

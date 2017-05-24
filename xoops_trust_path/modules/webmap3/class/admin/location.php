@@ -28,7 +28,7 @@ function webmap3_admin_location( $dirname, $trust_dirname )
 {
 	$this->webmap3_admin_base( $dirname, $trust_dirname );
 
-	$this->_config_item_class =& webmap3_xoops_config_item::getInstance( $dirname );
+	$this->_config_item_class = webmap3_xoops_config_item::getInstance( $dirname );
 	$this->_form_class   =& webmap3_api_form::getSingleton( $dirname );
 	$this->_header_class =& webmap3_xoops_header::getSingleton( $dirname );
 

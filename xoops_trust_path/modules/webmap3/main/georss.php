@@ -14,7 +14,7 @@ webmap3_include_once( 'class/main/georss.php' );
 //=========================================================
 // main
 //=========================================================
-$manage =& webmap3_main_georss::getInstance( WEBMAP3_DIRNAME );
+$manage = webmap3_main_georss::getInstance( WEBMAP3_DIRNAME );
 
 $xoopsOption['template_main'] = WEBMAP3_DIRNAME.'_main_georss.html' ;
 include XOOPS_ROOT_PATH . "/header.php" ;

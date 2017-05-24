@@ -20,7 +20,7 @@ webmap3_include_once( 'class/admin/index.php' );
 //=========================================================
 // main
 //=========================================================
-$manager =& webmap3_admin_index::getInstance( WEBMAP3_DIRNAME, WEBMAP3_TRUST_DIRNAME );
+$manager = webmap3_admin_index::getInstance( WEBMAP3_DIRNAME, WEBMAP3_TRUST_DIRNAME );
 $manager->main();
 exit();
 

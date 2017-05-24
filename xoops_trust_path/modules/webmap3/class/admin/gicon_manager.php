@@ -54,9 +54,9 @@ function webmap3_admin_gicon_manager( $dirname, $trust_dirname )
 	$this->webmap3_admin_base( $dirname, $trust_dirname );
 
 	$this->_gicon_handler  =& webmap3_handler_gicon::getSingleton( $dirname );
-	$this->_image_mime     =& webmap3_lib_image_mime::getInstance();
-	$this->_post_class     =& webmap3_lib_post::getInstance();
-	$this->_utility_class  =& webmap3_lib_utility::getInstance();
+	$this->_image_mime     = webmap3_lib_image_mime::getInstance();
+	$this->_post_class     = webmap3_lib_post::getInstance();
+	$this->_utility_class  = webmap3_lib_utility::getInstance();
 
 	$this->_cfg_gicon_fsize   = $this->_xoops_param->get_module_config_by_name('gicon_fsize') ;
 	$this->_cfg_gicon_width   = $this->_xoops_param->get_module_config_by_name('gicon_width') ;
@@ -718,14 +718,14 @@ function parse_ext( $file )
 //---------------------------------------------------------
 function _print_gicon_form( $mode , $row )
 {
-	$form =& webmap3_admin_gicon_form::getInstance( 
+	$form = webmap3_admin_gicon_form::getInstance( 
 		$this->_DIRNAME , $this->_TRUST_DIRNAME );
 	$form->print_form( $mode, $row );
 }
 
 function _print_gicon_list( $rows )
 {
-	$form =& webmap3_admin_gicon_form::getInstance( 
+	$form = webmap3_admin_gicon_form::getInstance( 
 		$this->_DIRNAME , $this->_TRUST_DIRNAME );
 	$form->print_list( $rows );
 }

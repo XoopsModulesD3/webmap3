@@ -21,7 +21,7 @@ class webmap3_admin_menu
 //---------------------------------------------------------
 function webmap3_admin_menu( $dirname, $trust_dirname )
 {
-	$this->_lib_class =& webmap3_lib_admin_menu::getInstance( $dirname, $trust_dirname );
+	$this->_lib_class = webmap3_lib_admin_menu::getInstance( $dirname, $trust_dirname );
 	$this->_inc_class =& webmap3_inc_admin_menu::getSingleton( $dirname );
 }
 

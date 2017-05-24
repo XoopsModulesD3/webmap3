@@ -503,7 +503,7 @@ function parse_ext( $file )
 //---------------------------------------------------------
 function update_xoops_config()
 {
-	$config =& webmap3_xoops_config_update::getInstance();
+	$config = webmap3_xoops_config_update::getInstance();
 	$config->update();
 }
 

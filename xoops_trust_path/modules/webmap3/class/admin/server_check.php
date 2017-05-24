@@ -84,7 +84,7 @@ function build_pathinfo_link()
 
 function build_gd()
 {
-	$gd_class =& webmap3_lib_gd::getInstance();
+	$gd_class = webmap3_lib_gd::getInstance();
 
 	$str = "<b>GD</b><br />\n";
 	list( $ret, $msg ) = $gd_class->version();

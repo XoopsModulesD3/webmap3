@@ -20,7 +20,7 @@ class webmap3_admin_kml
 //---------------------------------------------------------
 function webmap3_admin_kml( $dirname )
 {
-	$this->_builder =& webmap3_view_kml::getInstance( $dirname );
+	$this->_builder = webmap3_view_kml::getInstance( $dirname );
 }
 
 public static function &getInstance( $dirname )

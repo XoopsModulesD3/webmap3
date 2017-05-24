@@ -15,7 +15,7 @@ webmap3_include_once( 'class/main/geocoding.php' );
 //=========================================================
 // main
 //=========================================================
-$manage =& webmap3_main_geocoding::getInstance( WEBMAP3_DIRNAME );
+$manage = webmap3_main_geocoding::getInstance( WEBMAP3_DIRNAME );
 
 $xoopsOption['template_main'] = WEBMAP3_DIRNAME.'_main_geocoding.html' ;
 include XOOPS_ROOT_PATH . "/header.php" ;

@@ -30,7 +30,7 @@ webmap3_include_once( 'class/admin/gicon_manager.php' );
 //=========================================================
 // main
 //=========================================================
-$manager =& webmap3_admin_gicon_manager::getInstance( WEBMAP3_DIRNAME, WEBMAP3_TRUST_DIRNAME );
+$manager = webmap3_admin_gicon_manager::getInstance( WEBMAP3_DIRNAME, WEBMAP3_TRUST_DIRNAME );
 $manager->main();
 exit();
 

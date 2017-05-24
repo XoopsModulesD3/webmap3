@@ -23,7 +23,7 @@ webmap3_include_once( 'class/admin/location.php' );
 //=========================================================
 // main
 //=========================================================
-$manager =& webmap3_admin_location::getInstance( WEBMAP3_DIRNAME, WEBMAP3_TRUST_DIRNAME );
+$manager = webmap3_admin_location::getInstance( WEBMAP3_DIRNAME, WEBMAP3_TRUST_DIRNAME );
 $manager->main();
 exit();
 

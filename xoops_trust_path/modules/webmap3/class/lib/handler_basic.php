@@ -31,7 +31,7 @@ class webmap3_lib_handler_basic
 //---------------------------------------------------------
 function webmap3_lib_handler_basic()
 {
-	$this->_db =& Database::getInstance();
+	$this->_db = Database::getInstance();
 }
 
 //---------------------------------------------------------

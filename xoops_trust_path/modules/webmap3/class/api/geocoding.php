@@ -30,7 +30,7 @@ function webmap3_api_geocoding( $dirname )
 {
 	$this->_DIRNAME = $dirname;
 
-	$this->_multibyte_class =& webmap3_lib_multibyte::getInstance();
+	$this->_multibyte_class = webmap3_lib_multibyte::getInstance();
 
 	$config_class =& webmap3_inc_config::getSingleton( $dirname );
 	$this->_language = $config_class->get_by_name( 'language' );

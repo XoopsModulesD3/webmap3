@@ -21,7 +21,7 @@ webmap3_include_once( 'class/admin/kml.php' );
 //=========================================================
 // main
 //=========================================================
-$manager =& webmap3_admin_kml::getInstance( WEBMAP3_DIRNAME );
+$manager = webmap3_admin_kml::getInstance( WEBMAP3_DIRNAME );
 $manager->main();
 exit();
 

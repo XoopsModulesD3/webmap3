@@ -44,7 +44,7 @@ function webmap3_admin_gicon_form( $dirname, $trust_dirname )
 	$this->webmap3_lib_form_lang( $dirname, $trust_dirname ) ;
 
 	$this->_gicon_handler =& webmap3_handler_gicon::getSingleton( $dirname );
-	$this->_xoops_param   =& webmap3_xoops_param::getInstance();
+	$this->_xoops_param   = webmap3_xoops_param::getInstance();
 
 	$this->_cfg_gicon_fsize   = $this->_xoops_param->get_module_config_by_name('gicon_fsize') ;
 	$this->_cfg_gicon_width   = $this->_xoops_param->get_module_config_by_name('gicon_width') ;

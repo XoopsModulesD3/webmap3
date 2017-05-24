@@ -21,7 +21,7 @@ webmap3_include_once( 'class/main/kml.php' );
 //=========================================================
 // main
 //=========================================================
-$builder =& webmap3_main_kml::getInstance( WEBMAP3_DIRNAME );
+$builder = webmap3_main_kml::getInstance( WEBMAP3_DIRNAME );
 $builder->main();
 
 exit();

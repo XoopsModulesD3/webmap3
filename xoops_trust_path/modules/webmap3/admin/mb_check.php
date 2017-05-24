@@ -19,7 +19,7 @@ webmap3_include_language( 'admin.php' );
 //=========================================================
 // main
 //=========================================================
-$manager =& webmap3_admin_mb_check::getInstance();
+$manager = webmap3_admin_mb_check::getInstance();
 $manager->main();
 exit();
 

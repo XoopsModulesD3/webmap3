@@ -36,7 +36,7 @@ class webmap3_main_get_location
 //---------------------------------------------------------
 function webmap3_main_get_location( $dirname )
 {
-	$this->_xoops_param =& webmap3_xoops_param::getInstance();
+	$this->_xoops_param = webmap3_xoops_param::getInstance();
 	$this->_api_class   =& webmap3_api_get_location::getSingleton( $dirname );
 }
 

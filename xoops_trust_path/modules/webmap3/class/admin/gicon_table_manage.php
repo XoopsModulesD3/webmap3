@@ -27,7 +27,7 @@ function webmap3_admin_gicon_table_manage( $dirname, $trust_dirname )
 	$this->set_manage_list_column_array(
 		array( 'gicon_title', 'gicon_image_path' ) );
 
-	$menu_class =& webmap3_admin_menu::getInstance( $dirname, $trust_dirname );
+	$menu_class = webmap3_admin_menu::getInstance( $dirname, $trust_dirname );
 	$this->set_manage_menu( $menu_class->build_menu() );
 
 }

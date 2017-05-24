@@ -59,19 +59,19 @@ if( ! function_exists( 'webmap3_oninstall_base' ) )
 
 function webmap3_oninstall_base( &$module )
 {
-	$inc_class =& webmap3_inc_oninstall::getInstance();
+	$inc_class = webmap3_inc_oninstall::getInstance();
 	return $inc_class->install( $module );
 }
 
 function webmap3_onupdate_base( &$module )
 {
-	$inc_class =& webmap3_inc_oninstall::getInstance();
+	$inc_class = webmap3_inc_oninstall::getInstance();
 	return $inc_class->update( $module );
 }
 
 function webmap3_onuninstall_base( &$module )
 {
-	$inc_class =& webmap3_inc_oninstall::getInstance();
+	$inc_class = webmap3_inc_oninstall::getInstance();
 	return  $inc_class->uninstall( $module );
 }
 

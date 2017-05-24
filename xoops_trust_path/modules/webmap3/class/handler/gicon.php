@@ -24,7 +24,7 @@ function webmap3_handler_gicon( $dirname )
 	$this->set_table_prefix_dirname( 'gicon' );
 	$this->set_id_name( 'gicon_id' );
 
-	$this->_utility_class =& webmap3_lib_utility::getInstance();
+	$this->_utility_class = webmap3_lib_utility::getInstance();
 
 	$constpref = strtoupper( '_P_' . $dirname. '_' ) ;
 	$this->set_debug_sql_by_const_name(   $constpref.'DEBUG_SQL' );

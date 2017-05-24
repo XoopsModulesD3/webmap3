@@ -21,8 +21,8 @@ function webmap3_admin_index( $dirname, $trust_dirname )
 {
 	$this->webmap3_admin_base( $dirname, $trust_dirname );
 
-	$this->_dir_class   =& webmap3_lib_dir::getInstance();
-	$this->_check_class =& webmap3_admin_server_check::getInstance( $dirname, $trust_dirname );
+	$this->_dir_class   = webmap3_lib_dir::getInstance();
+	$this->_check_class = webmap3_admin_server_check::getInstance( $dirname, $trust_dirname );
 }
 
 public static function &getInstance( $dirname, $trust_dirname )

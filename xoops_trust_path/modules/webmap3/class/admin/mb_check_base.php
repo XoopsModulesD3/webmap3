@@ -23,7 +23,7 @@ class webmap3_admin_mb_check_base
 //---------------------------------------------------------
 function webmap3_admin_mb_check_base()
 {
-	$this->_multibyte_class =& webmap3_lib_multibyte::getInstance();
+	$this->_multibyte_class = webmap3_lib_multibyte::getInstance();
 }
 
 public static function &getInstance()

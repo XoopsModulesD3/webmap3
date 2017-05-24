@@ -48,10 +48,10 @@ function webmap3_lib_admin_manage( $dirname , $trust_dirname )
 {
 	$this->webmap3_lib_form_lang( $dirname , $trust_dirname );
 
-	$this->_base_class   =& webmap3_lib_admin_base::getInstance( $dirname, $trust_dirname );
-	$this->_footer_class =& webmap3_lib_footer::getInstance();
+	$this->_base_class   = webmap3_lib_admin_base::getInstance( $dirname, $trust_dirname );
+	$this->_footer_class = webmap3_lib_footer::getInstance();
 
-	$this->_pagenavi_class =& webmap3_lib_pagenavi::getInstance();
+	$this->_pagenavi_class = webmap3_lib_pagenavi::getInstance();
 	$this->_pagenavi_class->set_perpage_default( $this->_PAEPAGE_DEFAULT );
 	$this->_pagenavi_class->set_max_sortid(      $this->_MAX_SORTID );
 

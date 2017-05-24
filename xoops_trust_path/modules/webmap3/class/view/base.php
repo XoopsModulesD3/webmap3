@@ -25,7 +25,7 @@ class webmap3_view_base
 function webmap3_view_base( $dirname )
 {
 	$this->_DIRNAME = $dirname ;
-	$this->_xoops_param    =& webmap3_xoops_param::getInstance();
+	$this->_xoops_param    = webmap3_xoops_param::getInstance();
 	$this->_language_class =& webmap3_d3_language::getSingleton(  $dirname );
 	$this->_header_class   =& webmap3_xoops_header::getSingleton( $dirname );
 

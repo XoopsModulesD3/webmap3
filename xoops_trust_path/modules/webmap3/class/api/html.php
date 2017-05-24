@@ -123,8 +123,8 @@ function webmap3_api_html( $dirname )
 	$this->_display_url_opener = XOOPS_URL.'/modules/'.$dirname.'/index.php?fct=get_location&mode=opener';
 	$this->_display_url_desc   = $this->_display_url_opener;
 
-	$this->_form_class      =& webmap3_lib_form::getInstance();
-	$this->_multibyte_class =& webmap3_lib_multibyte::getInstance();
+	$this->_form_class      = webmap3_lib_form::getInstance();
+	$this->_multibyte_class = webmap3_lib_multibyte::getInstance();
 	$this->_header_class    =& webmap3_xoops_header::getSingleton($dirname );
 	$this->_language_class  =& webmap3_d3_language::getSingleton( $dirname );
 

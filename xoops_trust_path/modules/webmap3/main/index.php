@@ -14,7 +14,7 @@ webmap3_include_once( 'class/main/index.php' );
 //=========================================================
 // main
 //=========================================================
-$manage =& webmap3_main_index::getInstance( WEBMAP3_DIRNAME );
+$manage = webmap3_main_index::getInstance( WEBMAP3_DIRNAME );
 
 $xoopsOption['template_main'] = WEBMAP3_DIRNAME.'_main_search.html' ;
 include XOOPS_ROOT_PATH . "/header.php" ;

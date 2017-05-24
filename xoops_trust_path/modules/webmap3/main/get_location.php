@@ -21,7 +21,7 @@ webmap3_include_once( 'class/main/get_location.php' );
 //=========================================================
 // main
 //=========================================================
-$manage =& webmap3_main_get_location::getInstance( WEBMAP3_DIRNAME );
+$manage = webmap3_main_get_location::getInstance( WEBMAP3_DIRNAME );
 $manage->main();
 exit();
 

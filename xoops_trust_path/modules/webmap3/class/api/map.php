@@ -117,8 +117,8 @@ function webmap3_api_map( $dirname )
 	$this->_gicon_handler   =& webmap3_handler_gicon::getSingleton( $dirname );
 	$this->_header_class    =& webmap3_xoops_header::getSingleton(  $dirname );
 	$this->_language_class  =& webmap3_d3_language::getSingleton(   $dirname );
-	$this->_multibyte_class =& webmap3_lib_multibyte::getInstance();
-	$this->_utility_class   =& webmap3_lib_utility::getInstance();
+	$this->_multibyte_class = webmap3_lib_multibyte::getInstance();
+	$this->_utility_class   = webmap3_lib_utility::getInstance();
 
 	$config_class =& webmap3_inc_config::getSingleton( $dirname );
 	$this->_REGION_DEFAULT = $config_class->get_by_name( 'region' );

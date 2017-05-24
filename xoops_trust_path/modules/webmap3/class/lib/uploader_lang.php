@@ -40,7 +40,7 @@ class webmap3_lib_uploader_lang extends webmap3_lib_uploader
 function webmap3_lib_uploader_lang( $dirname , $trust_dirname )
 {
 	$this->webmap3_lib_uploader();
-	$this->_language_class =& webmap3_d3_language_base::getInstance( $dirname , $trust_dirname );
+	$this->_language_class = webmap3_d3_language_base::getInstance( $dirname , $trust_dirname );
 }
 
 public static function &getInstance( $dirname , $trust_dirname )

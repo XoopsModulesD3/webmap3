@@ -120,7 +120,7 @@ function modify_config_title_length()
 		return;
 	}
 
-	$config =& webmap3_xoops_config_update::getInstance();
+	$config = webmap3_xoops_config_update::getInstance();
 	$config->update();
 }
 

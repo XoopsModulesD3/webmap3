@@ -43,7 +43,7 @@ function get_objects()
 	$this->_conf_objs = array();
 
 	$criteria = new CriteriaCompo(new Criteria('conf_modid', $this->_module_mid));
-	$objs =& $this->_config_handler->getObjects($criteria);
+	$objs = $this->_config_handler->getObjects($criteria);
 
 	if ( is_array($objs) ) {
 		foreach( $objs as $obj ) {
